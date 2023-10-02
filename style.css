@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+   max-width: 90%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+/* -------------------------------------- Header Section ------------------------------------ */
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 175px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+header.logo{
+    display: block;
+}
+ header .logo svg{
+    fill: #e50914;
+    height: 37px;
+ }
+ header div+div {
+    text-align: right;
+ }
+ header a.signin{
+    display: inline-block;
+    background-color: #e50914;
+    text-decoration: none;
+    color: #fff;
+    padding: 7px 17px;
+    border-radius: 3px;
+ }
+ header select{
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 0 6px 20px;
+    border-radius: 3px;
+ }
+ header div.select{
+    display: inline-block;
+    margin-right: 30px;
+    opacity: 50%;
+ }
+ header div.select svg{
+    height: 20px;
+    fill: #fff;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 4px;
+ }
+ /* ------------------------------------- Header Background ---------------------------------- */
+ div.splash{
+    position: relative;
+ }
+ div.splash div.gradient{
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
+    position: absolute;
+    inset: 0;
+ }
+ div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+ }
+div.splash div.content{
+   max-width: 80%;
+   position: absolute;
+   inset: 0;
+   left: 20%;
+   margin-left: -10%;
+   display: grid;
+   align-items: center;
+   text-align: center;
+}
+div.splash h1, div.splash h2, div.splash h3{
+   font-weight: normal;
+}
+div.splash h1{
+   font-size: 3rem;
+   font-weight: bold;
+}
+div.splash h2{
+   font-size: 1.5rem;
+   margin-top: 13px;
+   margin-bottom: 29px;
+}
+div.splash h3{
+   font-size: 1.25rem;
+}
+div.splash form{
+   position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1.5fr 1fr 1fr;
+   margin-top: 20px;
+   margin-left: 55px;
+}
+div.splash input {
+   padding: 15px;
+   font-size: 1.2rem;
+   width: 100%;
+   opacity: 65%;
+   background-color: #000;
+   border-radius: 3px;
+}
+div.splash input ~ span{
+   position: absolute;
+   left: 300px;
+   top: 19px;
+   z-index: 3;
+   color: #aaa;
+   transition: all .15s ease;
+   pointer-events: none;
+}
+div.splash input:focus{
+   padding-top: 19px;
+   padding-bottom: 11px;
+}
+div.splash input:focus ~ span{
+   top: 4px;
+   font-size: .8rem;
+}
+div.splash button{
+   font-size: 1.62rem;
+   padding: 12px 26px;
+   background-color: #e50914;
+   color: #fff;
+   float: left;
+   border-radius: 3px;
+}
+.getstart{
+   margin-left: -85px;
+}
+/* --------------------------------------- Sections ---------------------------------- */
+section{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 46px;
+   padding: 70px 35px;
+   align-items: center;
+   border-top: 8px solid #222;
+}
+section.last{
+   border-bottom: 8px solid #222;
+}
+section div.texts h1{
+   font-size: 3.125rem;
+   margin-bottom: .5rem;
+}
+section div.texts p{
+   font-size: 1.625rem;
+}
+.media{
+   position: relative;
+}
+.media.s1 img{
+   width: 35rem;
+}
+.media.s1 video{
+   padding: 0.875rem;
+   width: 27rem;
+   position: absolute;
+   top: 4.6rem;
+   left:3.9rem;
+}
+section:nth-child(even) div.texts{
+   order: 2;
+}
+section div.download{
+   background-color: #000;
+   border: 0.125rem solid #666;
+   border-radius: 15px;
+   padding: -20px;
+   height: 95px;
+   display: grid;
+   text-align: center;
+   align-items: center;
+   position: absolute;
+   bottom: 20px;
+   width: 340px;
+   left: 50%;
+   margin-left: -200px;
+   gap: 15px;
+   grid-template-columns: max-content 1fr max-content;
+}
+section div.download img.cover{
+   height: 75px;
+   width: auto;
+}
+.media.s3 img{
+   width: 35rem;
+   position: relative;
+   z-index: 5;
+}
+.media.s3 video{
+   padding: 0.875rem;
+   width: 24rem;
+   position: absolute;
+   top: 1.6rem;
+   left:4.8rem;
+}
+/* -------------------------------------------- Questions ------------------------------ */
+div.faq{
+   padding: 70px 30px;
+}
+div.faq h1{
+   font-size: 3.125rem;
+   text-align: center;
+}
+div.questions{
+   max-width: 80%;
+   margin: 0 auto;
+   font-size: 1.625rem;
+}
+div.question{
+   position: relative;
+   background-color: #303030;
+   margin-bottom: 10px;
+}
+div.question svg{
+   width: 30px;
+   height: 30px;
+   right: 30px;
+   top: 20px;
+   position: absolute;
+   transform: rotate(45deg);
+   transition: all 0.2s ease;
+}
+div.question .header{
+   display: block;
+   padding: 20px 30px;
+   border-bottom: 1px solid #000;
+   cursor: pointer;
+}
+div.question div.answer{
+   padding: 0 30px;
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.2s ease;
+}
+div.question input[type="checkbox"]{
+   display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer{
+   padding: 30px 30px;
+   max-height: 600px;
+}
+div.question input[type="checkbox"]:checked ~ .header svg{
+   transform: rotate(180deg);
+}
+div.faq h3{
+   font-weight: normal;
+   text-align: center;
+   margin: 40px 0 20px;
+}
+div.faq form{
+   max-width: 635px;
+   margin: 0 auto;
+}
+/* ------------------------------------ second form ---------------------------------- */
+div.cta form.lastform{
+   position: relative;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   margin-top: 20px;
+   margin-left: 455px;
+}
+div.cta input {
+   padding: 15px;
+   font-size: 1.2rem;
+   width: 400px;
+   border: 1px solid rgba(17, 194, 126);
+   margin-left: -90px;
+   opacity: 45%;
+   /* background-color: #aaa; */
+   background-color: rgba(36, 61, 77);
+}
+div.cta input ~ span{
+   position: absolute;
+   left: -10px;
+   top: 19px;
+   z-index: 3;
+   transition: all .15s ease;
+   pointer-events: none;
+}
+div.cta input:focus{
+   padding-top: 19px;
+   padding-bottom: 11px;
+}
+div.cta input:focus ~ span{
+   top: 4px;
+   font-size: .8rem;
+}
+div.cta button{
+   font-size: 1.62rem;
+   padding: 12px 26px;
+   background-color: #e50914;
+   color: #fff;
+   width: 212px;
+}
+.getstart{
+   margin-left: 4px;
+}
+/* ----------------------------------------- footer ----------------------------------------- */
+footer{
+   text-align: center;
+   align-items: center;
+   color: #fff;
+   height: 40px;
+   /* background-color: aqua; */
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+/* .footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 2rem 9%;
+   background: var(--second-bg-color);
+}
+
+.footer-text p {
+   font-size: 1.6rem;
+} */
