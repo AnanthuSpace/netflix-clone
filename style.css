@@ -308,24 +308,60 @@ div.cta button{
    margin-left: 4px;
 }
 /* ----------------------------------------- footer ----------------------------------------- */
-footer{
-   text-align: center;
-   align-items: center;
-   color: #fff;
-   height: 40px;
-   /* background-color: aqua; */
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+ .footer{
+   padding: 50px 15% 10px;
+   border-top: 6px solid #333;
+   color: rgba(255,255,255,0.7);
+   margin-bottom: 50px;
 }
-/* .footer {
+.row{
    display: flex;
-   justify-content: space-between;
+   width: 100%;
    align-items: center;
    flex-wrap: wrap;
-   padding: 2rem 9%;
-   background: var(--second-bg-color);
+   padding: 50px 0;
 }
-
-.footer-text p {
-   font-size: 1.6rem;
-} */
+.footer h2{
+   font-size: 18px;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.footer .col{
+   flex-basis: 25%;
+   flex-grow: 1;
+   margin-bottom: 20px;
+} 
+.footer .col a{
+   display: block;
+   color: rgba(255,255,255,0.7);
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+.footer .row{
+   align-items: flex-start;
+   padding: 10px 0;
+}
+.footer select{
+   background-color: transparent;
+   color: white;
+   padding: 6px 0 6px 20px;
+   border-radius: 3px;
+   border: 2px solid white;
+}
+.footer .select-1{
+   display: inline-block;
+   margin-right: 30px;
+   opacity: 50%;
+}
+.footer .select-1 svg{
+   height: 20px;
+   fill: white;
+   position: absolute;
+   margin-top: 5px;
+   margin-left: 4px;
+}
+.copyright-txt{
+   font-size: 14px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
